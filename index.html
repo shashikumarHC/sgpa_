@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGPA CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="IPCsection">
+    <div class="heading">
+      <h1>SGPA Calculator</h1>
+    </div>
+    <div class="sel">
+      <label id="sellab" for="brancherse">Choose your branch :</label>
+      <select id="brancherse">
+        <option value="CS">Computer Science III SEM</option>
+        <option value="ME">Mechanical III SEM</option>
+        <option value="EC">Electonics and Comunication III SEM</option>
+        <option value="CV">Civil engineering III SEM</option>
+      </select>
+    </div>
+    <div class="content">
+      <div id="errorshow">
+      ERROR : <span id="erspan">please Check every boxes</span>
+      </div>
+      <div id="filler"></div>
+      <div id="resultbar">
+        Result : <span id="resultspan">0.00</span>
+      </div>
+      <div class="btnbox">
+        <button id="subbtn" type="submit">Calculate</button>
+      </div>
+    </div>
+    <div id="loaderbox">
+      <div class="load">
+        <div><div id="loader"></div></div>
+        <div id="loadwords">Loading...</div>
+      </div>
+    </div>
+  </section>
+    <script src="main.js"></script>
+</body>
+</html>
